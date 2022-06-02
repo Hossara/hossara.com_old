@@ -3,8 +3,11 @@ services:
   front:
     restart: on-failure
     build: ./frontend
+    environment:
+      - NODE_ENV=production
+      - NUXT_HOST=0.0.0.0
     ports:
-      - '81:5000'
+      - '3000:3000'
   nginx:
     build: ./nginx
     ports:
