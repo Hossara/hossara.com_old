@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <div id="home">
-    HI
+  <div id="portfolio" data-page>
+    <p>HI</p>
   </div>
 </template>
 

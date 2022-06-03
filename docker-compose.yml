@@ -1,8 +1,8 @@
 version: '3.9'
 services:
-  front:
+  hossara:
     restart: on-failure
-    build: ./frontend
+    build: ./web
     environment:
       - NODE_ENV=production
       - NUXT_HOST=0.0.0.0
@@ -13,4 +13,4 @@ services:
     ports:
       - '80:80'
     depends_on:
-      - front
+      - hossara
