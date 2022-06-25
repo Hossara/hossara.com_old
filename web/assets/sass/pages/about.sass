@@ -1,0 +1,58 @@
+@import ../public/colors
+
+#about
+  max-width: 1000px
+  width: 100%
+  margin: auto
+  padding: 0 20px
+
+  @media screen and (min-width: 1060px)
+    padding-top: 40px
+
+  @media screen and (max-width: 750px)
+    justify-content: center!important
+
+  > .pf_pic
+    background: white url("../../img/images/pic1.png") no-repeat center top 30px
+    width: 325px
+    height: 290px
+    background-size: 100%
+    box-shadow: 0 0 60px rgba(78, 78, 78, 0.37)
+    animation: shape 5s running infinite
+    @media screen and (max-width: 1060px)
+      width: 310px
+      height: 275px
+
+    @media screen and (max-width: 750px)
+      width: 244px
+      height: 218px
+
+  > h4
+    color: $v2_text
+    font-size: 30px
+    margin-bottom: 0
+    margin-top: 35px
+    line-height: 50px
+    @media screen and (max-width: 1060px)
+      font-size: 25px
+
+    @media screen and (max-width: 750px)
+      font-size: 20px
+      line-height: 40px
+      text-align: center
+
+    @media screen and (max-width: 400px)
+      font-size: 18px
+      line-height: 30px
+      margin-top: 20px
+
+    > span
+      color: $v2_white
+      font-weight: bold
+
+@keyframes shape
+  0%, 100%
+    border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%
+
+  33%
+    border-radius: 80% 60% 60% 80% / 80% 80% 60% 60%

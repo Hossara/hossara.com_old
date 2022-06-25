@@ -22,3 +22,4 @@
   font-display: swap
 </style>
 <style src="./assets/sass/public/style.sass"></style>
+<style src="./assets/sass/public/_default.sass"></style>

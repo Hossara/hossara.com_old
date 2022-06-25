@@ -1,5 +1,9 @@
 <script lang="ts" setup>
+import {definePageMeta} from "#imports";
 
+definePageMeta({
+  key: (route) => route.name = "About"
+})
 </script>
 
 <template>
