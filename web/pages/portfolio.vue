@@ -1,10 +1,14 @@
 <script lang="ts" setup>
+import {definePageMeta} from "#imports";
 
+definePageMeta({
+  key: (route) => route.meta.name = "Portfolio"
+})
 </script>
 
 <template>
   <div id="portfolio" data-page>
-    <p>HI</p>
+    <p>IN DEVELOPMENT</p>
   </div>
 </template>
 

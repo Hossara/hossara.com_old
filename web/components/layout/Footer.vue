@@ -6,7 +6,7 @@
   <footer class="d-flex justify-content-center align-items-center">
     <div class="navigation d-none align-items-center justify-content-start">
       <div></div>
-      <p class="mb-0">{{ $route.name }}</p>
+      <p class="mb-0">{{ $route.meta["name"] }}</p>
     </div>
     <div class="icon_bar" dir="rtl">
       <a target="_blank" href="mailto:hoseinaraghi84@gmail.com" class="fa fa-envelope"></a>

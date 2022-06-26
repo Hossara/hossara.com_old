@@ -2,7 +2,7 @@
 import {definePageMeta} from "#imports";
 
 definePageMeta({
-  key: (route) => route.name = "About"
+  key: (route) => route.meta.name = "Home Page"
 })
 </script>
 
@@ -13,7 +13,7 @@ definePageMeta({
         <h1>Hey! I’m Hossein Araghi</h1>
         <h3>Full stack Mobile & Web Developer</h3>
         <div class="d-flex align-items-center justify-content-start">
-          <WidgetWhiteButton>About Me</WidgetWhiteButton>
+          <WidgetWhiteButton @click="$router.push('/about')">About Me</WidgetWhiteButton>
           <WidgetRoundedButton>Visit My Blog</WidgetRoundedButton>
         </div>
       </div>

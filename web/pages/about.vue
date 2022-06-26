@@ -2,7 +2,7 @@
 import {definePageMeta} from "#imports";
 
 definePageMeta({
-  key: (route) => route.name = "About"
+  key: (route) => route.meta.name = "About Me"
 })
 </script>
 
