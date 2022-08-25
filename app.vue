@@ -24,14 +24,14 @@ useHead({
 @font-face
   font-family: Inter
   font-weight: 400
-  src: url("./assets/fonts/Inter-Regular.ttf")
+  src: url("assetsonts/Inter-Regular.ttf")
   font-display: swap
 
 @font-face
   font-family: Inter
   font-weight: 500
-  src: url("./assets/fonts/Inter-Medium.ttf")
+  src: url("assetsonts/Inter-Medium.ttf")
   font-display: swap
 </style>
-<style src="./assets/sass/public/style.sass"></style>
-<style src="./assets/sass/public/_default.sass"></style>
+<style src="assetsass/public/style.sass"></style>
+<style src="assetsass/public/_default.sass"></style>
