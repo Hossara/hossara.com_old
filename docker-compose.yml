@@ -2,7 +2,7 @@ version: '3.9'
 services:
   hossara:
     restart: on-failure
-    build: ../hossara.com
+    build: ./
     environment:
       - NODE_ENV=production
       - NUXT_HOST=0.0.0.0
