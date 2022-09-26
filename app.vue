@@ -4,6 +4,8 @@
   </NuxtLayout>
 </template>
 <style lang="sass">
+@import "bootstrap/scss/bootstrap"
+
 // FONTS
 @font-face
   font-family: Inter
