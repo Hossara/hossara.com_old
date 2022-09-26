@@ -3,12 +3,12 @@ import {definePageMeta} from "#imports";
 import {useHead} from "#head";
 
 // Page Settings
-definePageMeta({ layout: "surface", name: "About me" })
-useHead({ title: "About me | Hossein Araghi" })
+definePageMeta({ layout: "surface", name: "Projects" })
+useHead({ title: "Projects | Hossein Araghi" })
 </script>
 
 <template>
-  <div id="about" data-page>
+  <div id="projects" data-page>
     <p>IN DEVELOPMENT</p>
   </div>
 </template>

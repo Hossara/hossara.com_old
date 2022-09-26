@@ -1,9 +1,10 @@
 <script lang="ts" setup>
 import {definePageMeta} from "#imports";
+import {useHead} from "#head";
 
-definePageMeta({
-  key: (route) => route.meta.name = "Contact Me"
-})
+// Page Settings
+definePageMeta({ layout: "surface", name: "Contact me" })
+useHead({ title: "Contact me | Hossein Araghi" })
 </script>
 
 <template>

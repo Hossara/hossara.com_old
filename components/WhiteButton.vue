@@ -8,4 +8,4 @@
   </button>
 </template>
 
-<style scoped lang="sass" src="../../assets/sass/widget/whiteButton.sass"></style>
+<style scoped lang="sass" src="../assets/sass/widget/whiteButton.sass"></style>

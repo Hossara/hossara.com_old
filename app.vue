@@ -1,20 +1,4 @@
-<script lang="ts" setup>
-
-import {useHead} from "#imports";
-import {useRoute} from "#app";
-const route = useRoute()
-
-useHead({
-  titleTemplate: () => {
-    return route.name ? route.meta.name as string : 'Hossein Araghi'
-  }
-})
-</script>
-
 <template>
-  <Head>
-    <Title></Title>
-  </Head>
   <NuxtLayout name="surface">
     <NuxtPage/>
   </NuxtLayout>

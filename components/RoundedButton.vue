@@ -8,4 +8,4 @@
   </button>
 </template>
 
-<style scoped lang="sass" src="../../assets/sass/widget/roundedButton.sass"></style>
+<style scoped lang="sass" src="../assets/sass/widget/roundedButton.sass"></style>

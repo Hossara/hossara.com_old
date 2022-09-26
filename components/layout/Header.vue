@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 const website_links = [
   { title : "Home", url : "/" },
-  { title : "About me", url : "/about" },
-  { title : "Portfolio", url : "/portfolio" },
+  { title : "Projects", url : "/projects" },
+  { title : "Experiences", url : "/experiences" },
   { title : "contact me", url : "/contact" }
 ]
 </script>
@@ -10,7 +10,7 @@ const website_links = [
 <template>
   <header class="d-flex align-items-center justify-content-center">
     <div class="desktop d-flex justify-content-between align-items-center">
-      <img src="~/assets/img/brand/logo.svg" alt="Hossara.dev" rel="preload">
+      <img src="~/assets/img/brand/logo.svg" alt="Hossara.dev" rel="preload" @click="$router.push('/')">
       <div class="d-flex justify-content-center align-items-center">
         <NuxtLink v-for="link in website_links" :key="link" :to="link.url" active-class="ac">
           <span>{{ link.title }}</span>
