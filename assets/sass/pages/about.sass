@@ -6,11 +6,21 @@
     max-width: 710px
     width: 100%
 
+    @media screen and (max-width: 740px)
+      padding: 0 20px
+
     > p
       color: $v2_text
       font-size: 24px
       text-align: justify
       line-height: 50px
+      width: 100%
+
+      @media screen and (max-width: 800px)
+        font-size: 20px
+
+      @media screen and (max-width: 540px)
+        font-size: 18px
 
       > span
         color: $v2_white
@@ -19,8 +29,17 @@
     > div
       margin-top: 30px
 
+      @media screen and (max-width: 540px)
+        flex-wrap: wrap
+        margin-top: 0
+
       > button
         width: 240px
+
+        @media screen and (max-width: 540px)
+          width: 100%
+          margin-right: 0!important
+          margin-top: 15px
 
       > button:first-child
         margin-right: 20px
