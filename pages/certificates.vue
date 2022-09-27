@@ -4,12 +4,12 @@ import {useHead} from "#head";
 
 // Page Settings
 definePageMeta({ layout: "surface", name: "Contact me" })
-useHead({ title: "Contact me | Hossein Araghi" })
+useHead({ title: "My Certificates | Hossein Araghi" })
 </script>
 
 <template>
-  <div id="contact" data-page>
-    <p>IN DEVELOPMENT</p>
+  <div id="certificates" class="d-flex justify-content-center align-items-center" data-page>
+    <p>IN DEVELOPMENT...</p>
   </div>
 </template>
 

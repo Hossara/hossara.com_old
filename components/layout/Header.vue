@@ -6,7 +6,7 @@ const website_links = [
   { title : "About me", url : "/about" },
   { title : "Projects", url : "/projects" },
   { title : "Experiences", url : "/experiences" },
-  { title : "contact me", url : "/contact" }
+  { title : "Certificates", url : "/certificates" }
 ]
 
 const openMenu = () => isMenuOpen().value = true
