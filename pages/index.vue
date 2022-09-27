@@ -1,8 +1,10 @@
 <script lang="ts" setup>
 import {definePageMeta} from "#imports"
+import {useHead} from "#head";
 
 // Page Settings
 definePageMeta({ layout: "surface", name: "Home" })
+useHead({ title: "Hossein Araghi" })
 </script>
 
 <template>
