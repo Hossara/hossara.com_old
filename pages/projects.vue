@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import {definePageMeta} from "#imports";
-import {useHead} from "#head";
+import {definePageMeta} from "#imports"
+import {useHead} from "#head"
 
 // Page Settings
 definePageMeta({ layout: "surface", name: "Projects" })
