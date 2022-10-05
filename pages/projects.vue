@@ -20,6 +20,39 @@ const fake_projects = useState("fakeProjects", () =>
 [
   {
     title: "CS50x Iran",
+    tech_stack: "Spring boot, kotlin, vue.js 3",
+    position: "Software Engineer",
+    time: ["DEC 2022", "OCT 2022"],
+    links: [
+      { type: "link", url: "https://google.com" },
+      { type: "link", url: "https://google.com" },
+      { type: "github", url: "https://google.com" }
+    ]
+  },
+  {
+    title: "CS50x Iran",
+    tech_stack: "Spring boot, kotlin, vue.js 3, Nuxt3 RC, Mongodb, Sass",
+    position: "Developer",
+    time: ["DEC 2022", "OCT 2022"],
+    links: [
+      { type: "link", url: "https://google.com" },
+      { type: "link", url: "https://google.com" },
+      { type: "github", url: "https://google.com" }
+    ]
+  },
+  {
+    title: "CS50x Iran",
+    tech_stack: "Spring boot, kotlin, vue.js 3, Nuxt3 RC, Mongodb, Sass",
+    position: "Developer",
+    time: ["DEC 2022", "OCT 2022"],
+    links: [
+      { type: "link", url: "https://google.com" },
+      { type: "link", url: "https://google.com" },
+      { type: "github", url: "https://google.com" }
+    ]
+  },
+  {
+    title: "CS50x Iran",
     tech_stack: "Spring boot, kotlin, vue.js 3, Nuxt3 RC, Mongodb, Sass",
     position: "Developer",
     time: ["DEC 2022", "OCT 2022"],
@@ -85,7 +118,7 @@ const fake_projects = useState("fakeProjects", () =>
     <p v-else>hiiiia</p>-->
 
     <div class="row m-0">
-      <ProjectsCard v-for="project in fake_projects" :key="projects"/>
+      <ProjectsCard v-for="project in fake_projects" :key="projects" :project="project"/>
     </div>
   </div>
 </template>
