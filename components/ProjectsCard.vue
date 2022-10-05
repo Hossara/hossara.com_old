@@ -7,15 +7,14 @@ defineProps<{
 </script>
 
 <template>
-  <div class="productCards col-sm-3">
+  <div class="productCards col-sm-6 col-md-4 col-lg-3">
     <div class="inner d-flex flex-column justify-content-center align-items-center">
       <h2>{{ project.title }}</h2>
 
-      <p class="ps_time" v-if="project.time.length === 0">{{ project.time[0] }}</p>
-      <p class="ps_time" v-else>{{ project.time[0] }} - {{ project.time[1] }}</p>
+      <p class="ps_time">{{ project.time }}</p>
 
       <p class="ps_upper">Position : </p>
-      <p class="">{{ project.position }}</p>
+      <p>{{ project.position }}</p>
 
       <p class="ps_upper">Developed with : </p>
       <p class="ps_stack">{{ project.tech_stack }}</p>
