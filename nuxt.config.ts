@@ -8,4 +8,7 @@ export default defineNuxtConfig({
     vite: {
         logLevel: "error"
     },
+    nitro: {
+        plugins: ["~/server/index.ts"],
+    },
 })

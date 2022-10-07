@@ -1,31 +1,23 @@
 <script lang="ts" setup>
 import {definePageMeta, onMounted} from "#imports"
 import {useHead} from "#head"
-import {useNuxtApp, useState} from "#app";
-import axios from "axios";
-
+import {useAsyncData, useFetch, useNuxtApp, useState} from "#app";
+import {Projects} from "~/interfaces"
 // Page Settings
 definePageMeta({ layout: "surface", name: "Projects" })
 useHead({ title: "My Projects | Hossein Araghi" })
 
-const loading = useState("loading", () => true)
-const projects = useState("projects", () => [])
-
-onMounted(() => axios.get(useNuxtApp().$api("/projects"))
-    .then(value => projects.value = value.data)
-    .catch(reason => alert(reason))
-    .finally(() => loading.value = false))
-
+const { data, pending } = await useAsyncData('projects', () => $fetch('/api/projects'))
 </script>
 
 <template>
   <div id="projects" class="d-flex justify-content-center align-items-center text-white" data-page>
-    <LoadingWidget v-if="loading"/>
+    <LoadingWidget v-if="pending"/>
 
-    <p class="mb-0" v-else-if="projects.length === 0">No Projects Found!</p>
+    <p class="mb-0" v-else-if="data.length === 0">No Projects Found!</p>
 
     <div class="row m-0 w-100 justify-content-center" v-else>
-      <ProjectsCard v-for="project in projects" :key="projects" :project="project"/>
+      <ProjectsCard v-for="project in data" :key="project" :project="project"/>
     </div>
   </div>
 </template>

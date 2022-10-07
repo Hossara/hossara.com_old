@@ -7,6 +7,8 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
+    "mongoose": "^6.6.5",
+    "mongoose-bcrypt": "^1.10.0",
     "nuxt": "3.0.0-rc.11",
     "sass": "^1.52.2"
   },
