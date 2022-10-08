@@ -25,11 +25,9 @@ const { data, pending } = await useAsyncData('projects', () => $fetch('/api/proj
 <style lang="sass" scoped>
 #projects
   height: 100%
-  overflow: hidden
 
   > div
     height: 100%
     max-width: 1600px
     border-radius: 15px
-    overflow-y: scroll
 </style>
