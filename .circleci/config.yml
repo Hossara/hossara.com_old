@@ -13,7 +13,7 @@ jobs:
       - run:
           name: Deploy Over SSH
           command: |
-            ssh $SSH_USER@$SSH_HOST "./deploy-hossara.sh"
+            ssh $SSH_USER@$SSH_HOST "cd /home/ubuntu20/hossara.com | git pull | cd /home/ubuntu20/ | docker-compose up -d --build"
 
 workflows:
   version: 2
