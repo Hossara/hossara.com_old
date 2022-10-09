@@ -13,7 +13,7 @@ jobs:
       - run:
           name: Deploy Over SSH
           command: |
-            ssh $SSH_USER@$SSH_HOST "./deploy.sh"
+            ssh $SSH_USER@$SSH_HOST "./deploy-hossara.sh"
 
 workflows:
   version: 2
