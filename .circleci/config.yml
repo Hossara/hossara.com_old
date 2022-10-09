@@ -9,11 +9,11 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - "cf:3f:ce:45:65:c2:59:53:4e:e0:23:ef:2b:06:2e:85"
+            - "d0:3b:34:14:24:a7:51:d2:68:74:3f:fa:34:e9:6c:b4"
       - run:
           name: Deploy Over SSH
           command: |
-            ssh $SSH_USER@$SSH_HOST "cd /home/ubuntu20/hossara.com | git pull | cd /home/ubuntu20/ | docker-compose up -d --build"
+            ssh $SSH_USER@$SSH_HOST "./deploy-hossara.sh"
 
 workflows:
   version: 2
