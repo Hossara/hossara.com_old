@@ -26,8 +26,14 @@ const { data, pending } = await useAsyncData('projects', () => $fetch('/api/proj
 #projects
   height: 100%
 
+  @media screen and (max-width: 900px)
+    overflow: hidden!important
+
   > div
     height: 100%
     max-width: 1600px
     border-radius: 15px
+
+    @media screen and (max-width: 900px)
+      overflow-y: scroll!important
 </style>
