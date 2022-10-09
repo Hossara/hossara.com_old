@@ -11,7 +11,7 @@
     <div class="icon_bar" dir="rtl">
       <a target="_blank" href="mailto:hoseinaraghi84@gmail.com" class="fa fa-envelope"></a>
       <a target="_blank" href="https://instagram.com/hossara.dev" class="fa fa-instagram"></a>
-      <a target="_blank" href="https://linkedin.com/in/dev-haraghi" class="fa fa-linkedin-square"></a>
+      <a target="_blank" href="https://linkedin.com/in/hossara" class="fa fa-linkedin-square"></a>
       <a target="_blank" href="https://github.com/Hossara" class="fa fa-github"></a>
     </div>
   </footer>
